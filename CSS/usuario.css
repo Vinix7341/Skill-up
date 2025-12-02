@@ -127,6 +127,7 @@
   .lateral{order:3}
   .menu{order:1}
   .principal{order:2;width:100%}
+  .barra{width:200px;height:30px;background:#f0f0f0;border-radius:12px;overflow:hidden}
 }
 
 #ola {

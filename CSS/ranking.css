@@ -45,21 +45,11 @@
 .colPontos{font-weight:700;color:#222}
 .colMais{text-align:right}
 
-/* paginação */
-#paginacao{display:flex;justify-content:space-between;align-items:center;padding:12px 8px;margin-top:12px;border-top:1px solid #f3f3f3}
-.pagBtn{background:none;border:1px solid #eee;padding:8px 10px;border-radius:6px;cursor:pointer}
-.pagBtn.ativo{background:#111;color:#fff;border-color:#111}
 
-/* lateral direita */
-#lateral{width:300px;display:flex;flex-direction:column;gap:14px}
-.cardPequeno{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
-.miniTitulo{color:#7a43c6;margin-bottom:8px}
-.acao{background:#7a43c6;color:#fff;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
-.acao.full{width:100%}
-
-/* responsivo */
 /* responsivo - menu cima */
 @media (max-width: 768px) {
+  #tabela{width:80%;border-collapse:collapse}
+
   /* empilha colunas */
   .conteudo{
     padding:18px;
