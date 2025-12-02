@@ -48,8 +48,20 @@
 
 /* responsivo - menu cima */
 @media (max-width: 768px) {
-  #tabela{width:80%;border-collapse:collapse}
+  /* reduz fonte da tabela */
+  #tabela th, #tabela td {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
 
+  /* coloca tabela dentro de rolagem horizontal */
+  #card {
+    overflow-x: auto;
+  }
+
+  #tabela {
+    min-width: 500px; /* tabela mais estreita */
+  }
   /* empilha colunas */
   .conteudo{
     padding:18px;
