@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SkillUp - Login</title>
+  <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+<body>
+  <div class="fundo">
+    <div class="cartao">
+      <!-- mesma logo -->
+      <img src="imagens/logo.png" alt="logo" class="logo">
+
+      <!-- manter id e classes iguais ao cadastro -->
+      <div id="cf" class="cf">
+        <form id="formulario" class="formulario" autocomplete="off">
+          
+          <!-- título novo (classe nova) -->
+          <h2 class="titulo">Fazer login</h2>
+
+          <!-- usar mesmo id "email" -->
+          <div class="linhaunica">
+            <input id="email" name="email" class="campo" type="email" placeholder="Email" required>
+          </div>
+
+          <!-- usar mesmo id "senha" e mesmo wrapper usado no cadastro -->
+          <div class="linhaunica senha-wrapper">
+            <input id="senha" name="senha" class="campo" type="password" placeholder="Senha" required>
+            <button type="button" id="toggleSenha" class="toggle-senha">👁️</button>
+          </div>
+
+          <!-- linha de opções nova (classe nova / id novo só onde necessário) -->
+          <div class="linha-opcoes">
+            <label class="lembrar">
+              <input id="lembrar" name="lembrar" type="checkbox" class="checkbox">
+              <span>Lembrar de mim</span>
+            </label>
+            <a id="esqueci" class="esqueci" href="#">Esqueceu sua senha?</a>
+          </div>
+
+          <!-- botão mantém id "criar" (igual ao cadastro) -->
+          <button id="criar" class="criar" type="submit">Continuar com o email</button>
+
+          <div class="ou">
+            <span>ou entrar com</span>
+          </div>
+
+          <!-- botões sociais mantêm mesmos ids "google" e "apple" -->
+          <div class="botoesocial">
+            <button type="button" id="google" class="social">Google</button>
+            <button type="button" id="apple" class="social">Apple</button>
+          </div>
+
+          <!-- manter mesma classe "entrarlinha" -->
+          <div class="entrarlinha">
+            <span>Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="JS/login.js"></script>
+</body>
+</html>

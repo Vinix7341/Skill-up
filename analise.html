@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkillUp - Estatisticas</title>
+  <link rel="stylesheet" href="CSS/analise.css" />
+</head>
+<body>
+
+  <div class="fundo">
+    <header class="topo">
+      <img src="imagens/logo.png" alt="logo" class="logo">
+      <h1 id="ola"></h1> 
+      <div class="topoAcoes">
+        <img id="userimg" src="imagens/logo.png" alt="Avatar" class="avatar">
+        <div id="userMini" class="userMini">Usuário</div>
+      </div>
+    </header>
+
+  <main class="conteudo">
+      <aside class="menu">
+        <ul>
+          <li id="itemConquistas" class="item ativo">📈 Analise Empresa</li>
+          <li id="itemRanking" class="item">🏅 Ranking</li>
+          <li id="itemUsuario" class="item">👤 Minha conta</li>
+        </ul>
+      </aside>
+
+    <!-- corpo -->
+    <section id="corpo">
+      <!-- banner -->
+        <img id="bannerIl" src="imagens/conquistas.png" alt="" />
+
+      <div id="blocos">
+        <!-- cards pequenos -->
+        <div class="colEsq">
+          <div class="cartao pequeno">
+            <div class="linha">
+              <div class="iconeConquista">🏆</div>
+              <div class="progressoWrap">
+                <div class="circulo">
+                  <svg viewBox="0 0 36 36" class="grafico">
+                    <path class="fundo" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="preench" stroke-dasharray="25,100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.5" class="txt">25%</text>
+                  </svg>
+                </div>
+                <div class="label">Maior pontuação</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao pequeno">
+            <div class="linha">
+              <div class="iconeConquista">👥</div>
+              <div class="progressoWrap">
+                <div class="circulo">
+                  <svg viewBox="0 0 36 36" class="grafico">
+                    <path class="fundo" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="preench" stroke-dasharray="25,100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.5" class="txt">25%</text>
+                  </svg>
+                </div>
+                <div class="label">Média de pontos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cartão direito com gráfico -->
+        <aside class="colDir">
+          <div class="cartao grande">
+            <div class="tituloCard">Desempenho</div>
+            <img id="verificacao" src="imagens/ok.jpeg" alt="" />
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="JS/analise.js"></script>
+
+</body>
+</html>

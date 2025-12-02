@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SkillUp - Colaboradores</title>
+  <link rel="stylesheet" href="CSS/ranking.css">
+</head>
+<body>
+  <!-- fundo geral -->
+  <div id="fundo">
+
+    <!-- topo -->
+    <header class="topo">
+      <img src="imagens/logo.png" alt="logo" class="logo">
+      <h1 id="ola"></h1> 
+      <div class="topoAcoes">
+        <img id="userimg" src="imagens/logo.png" alt="Avatar" class="avatar">
+        <div id="userMini" class="userMini">Usuário</div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <aside class="menu">
+        <ul>
+          <li id="itemConquistas" class="item">📈 Analise Empresa</li>
+          <li id="itemRanking" class="item ativo">🏅 Ranking</li>
+          <li id="itemUsuario" class="item">👤 Minha conta</li>
+        </ul>
+      </aside>
+
+      <!-- área central -->
+      <section id="principal">
+        <div id="card">
+          <table id="tabela" role="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Posição</th>
+                <th>Pontos</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Primeiro</span></td>
+                <td class="colEmail">Primeiro email</td>
+                <td class="colPos">#1</td>
+                <td class="colPontos">Primeiro 0</td>
+                <td class="colMais">...</td>
+              </tr>
+
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Segundo</span></td>
+                <td class="colEmail">Segundo email</td>
+                <td class="colPos">#2</td>
+                <td class="colPontos">Segundo 0</td>
+                <td class="colMais">...</td>
+              </tr>
+
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Terceiro</span></td>
+                <td class="colEmail">Terceiro email</td>
+                <td class="colPos">#3</td>
+                <td class="colPontos">Terceiro 0</td>
+                <td class="colMais">...</td>
+              </tr>
+
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Quarto</span></td>
+                <td class="colEmail">Quarto email</td>
+                <td class="colPos">#4</td>
+                <td class="colPontos">Quarto 0</td>
+                <td class="colMais">...</td>
+              </tr>
+
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Quinto</span></td>
+                <td class="colEmail">Quinto email</td>
+                <td class="colPos">#5</td>
+                <td class="colPontos">Quinto 0</td>
+                <td class="colMais">...</td>
+              </tr>
+
+              <tr class="linha">
+                <td><input type="radio" name="selecao"></td>
+                <td class="colNome"><img class="avatar" src="imagens/perfil.jpeg" alt=""><span class="nome">Sexto</span></td>
+                <td class="colEmail">Sexto email</td>
+                <td class="colPos">#6</td>
+                <td class="colPontos">Sexto 0</td>
+                <td class="colMais">...</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="JS/ranking.js"></script>
+</body>
+</html>

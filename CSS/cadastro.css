@@ -1,0 +1,113 @@
+/* estilo geral */
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body,html{height:100%;margin:0;background:#e7e7e7}
+
+/* fundo central */
+.fundo{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
+
+/* cartão branco */
+.cartao{width:520px;display:flex;flex-direction:column;align-items:center}
+
+.cf{background:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.08);padding:36px; width: 100%;}
+
+/* logo */
+.logo{width:270px;margin-bottom:18px}
+
+/* formulario */
+.formulario{width:100%}
+
+/* linha com dois campos */
+.linha{display:flex;gap:12px;margin-bottom:12px}
+.campo{flex:1; margin-bottom: 10px; padding:12px 14px;border:1px solid #eee;border-radius:8px;font-size:15px;outline:none}
+.campo:focus{border-color:#d6b3ff}
+
+/* linha unica */
+.linhaunica{margin-bottom:12px;position:relative;display:flex}
+.mostrar{position:absolute;right:8px;top:6px;border:none;background:transparent;font-size:18px;cursor:pointer;padding:8px}
+
+/* termos */
+.termoslinha{display:flex;align-items:center;gap:8px;color:#666;font-size:14px;margin-bottom:14px}
+.checkbox{width:16px;height:16px}
+
+/* botao principal */
+.criar{width:100%;padding:12px;border:none;border-radius:8px;background:#7a43c6;color:#fff;font-weight:600;font-size:15px;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,0.04)}
+.criar:disabled{opacity:0.6;cursor:not-allowed}
+
+/* ou */
+.ou{margin:14px 0;text-align:center;color:#888;font-size:13px}
+
+/* botoes sociais */
+.botoesocial{display:flex;gap:12px;justify-content:center}
+.social{flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer}
+
+/* entrar linha */
+.entrarlinha{margin-top:12px;text-align:center;color:#666;font-size:14px}
+.entrarlinha a{color:#ffb84d;text-decoration:none}
+
+/* responsivo mobile */
+@media (max-width:768px){
+  .cartao{width:100%;padding:20px;border-radius:10px}
+  .logo{width:180px}
+  .linha{flex-direction:column}
+  .mostrar{top:8px;right:10px}
+  .social{padding:12px}
+}
+
+.senha-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.senha-wrapper input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.toggle-senha {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.toggle-senha:hover {
+  opacity: 1;
+}
+
+/* login ajustes */
+.cartao.pequeno { max-width: 420px; padding: 28px; border-radius: 12px; }
+
+/* titulo do form */
+.titulo { text-align:center; margin: 6px 0 14px; font-size:18px; color:#222; }
+
+/* opcoes linha (lembrar + esqueci) */
+.linha-opcoes { display:flex; justify-content:space-between; align-items:center; margin:8px 0 12px; gap:8px; font-size:13px; color:#666; }
+.lembrar { display:flex; align-items:center; gap:8px; }
+.esqueci { color:#7a43c6; text-decoration:none; font-size:13px; }
+
+/* botão principal ajustado */
+.criar { background:#7a43c6; color:#fff; padding:12px; border-radius:8px; font-weight:600; }
+
+/* senha wrapper já usado no cadastro, reforçar aqui */
+.senha-wrapper { position:relative; width:100%; }
+.senha-wrapper .campo { padding-right:44px; }
+
+/* toggle senha */
+.toggle-senha { position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; font-size:16px; opacity:0.8; }
+
+/* espaçamento social e link */
+.botoesocial { display:flex; gap:12px; margin-top:12px; justify-content:center; }
+.botoesocial .social { flex:1; padding:10px; border-radius:8px; border:1px solid #e6e6e6; background:#fff; cursor:pointer; }
+
+/* entrada responsiva */
+@media (max-width:480px){
+  .cartao.pequeno { margin: 20px; width:auto; padding:18px; }
+  .titulo { font-size:16px; }
+  .botoesocial { flex-direction:row; gap:10px; }
+}

@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* sombra leve */
+}
+
+/* Logo cabeçalho */
+.logo-cabecalho {
+    height: 45px;
+}
+
+/* Botão entrar */
+.botao-entrar {
+    background: #F4A51C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo */
+.conteudo {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Logo topo */
+.logo-topo {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+/* Título principal */
+.titulo {
+    font-size: 35px;
+    color: #5B3F92;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Títulos setores */
+.titulo-setor {
+    color: #F4A51C;
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+/* Caixas texto roxa */
+.caixa-texto, .bloco {
+    background: #7B4BB7;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+/* Linha dupla */
+.linha-dupla {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Bloco texto */
+.parte {
+    width: 50%;
+}
+
+/* Rodapé */
+.rodape {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 40px;
+}
+
+/* ---------------------- */
+/*   RESPONSIVIDADE       */
+/* ---------------------- */
+
+/* Celular */
+@media (max-width: 768px) {
+
+    /* Reduzir fonte */
+    .titulo {
+        font-size: 28px;
+    }
+
+    .linha-dupla {
+        flex-direction: column;
+    }
+
+    .bloco {
+        width: 100%;
+    }
+
+    .logo-topo {
+        width: 90px;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+    }
+
+    .botao-entrar {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .parte {
+        width: 100%;
+    }
+}
+
