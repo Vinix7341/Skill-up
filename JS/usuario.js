@@ -15,17 +15,10 @@ const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 document.addEventListener("DOMContentLoaded", () => {
   // botão baixar
   const btnBaixar = document.getElementById("jogar");
-  const btnConvidar = document.getElementById("convidar");
 
   if (btnBaixar) {
     btnBaixar.addEventListener("click", () => {
       window.location.href = "https://leofjb.itch.io/quizup-interactive";
-    });
-  }
-
-  if (btnConvidar) {
-    btnConvidar.addEventListener("click", () => {
-      window.location.href = "https://vinix7341.github.io/Skill-up/";
     });
   }
   // pegar itens

@@ -98,6 +98,8 @@
     color:#7a43c6;
 }
 
+
+
 /* conquistas */
 .secTitulo{font-size:25px;margin:6px 0 14px}
 .conquistasArea{padding:10px 0}
@@ -115,7 +117,7 @@
 .convidar, .jogar{background:#7a43c6;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
 
 /* responsivo */
-@media (max-width:980px){
+@media (max-width:768px){
   .conteudo{padding:18px;flex-direction:column;align-items:center}
   .menu,.lateral{width:100%}
 

@@ -59,7 +59,7 @@
 
 /* responsivo */
 /* responsivo - menu cima */
-@media (max-width:980px){
+@media (max-width: 768px) {
   /* empilha colunas */
   .conteudo{
     padding:18px;
